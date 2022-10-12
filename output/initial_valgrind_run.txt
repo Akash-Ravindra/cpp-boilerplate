@@ -1,0 +1,59 @@
+==20334== Memcheck, a memory error detector
+==20334== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20334== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20334== Command: app/shell-app
+==20334== 
+==20334== Conditional jump or move depends on uninitialised value(s)
+==20334==    at 0x10A31B: main (main.cpp:9)
+==20334== 
+==20334== 
+==20334== HEAP SUMMARY:
+==20334==     in use at exit: 44 bytes in 2 blocks
+==20334==   total heap usage: 53 allocs, 51 frees, 78,952 bytes allocated
+==20334== 
+==20334== LEAK SUMMARY:
+==20334==    definitely lost: 24 bytes in 1 blocks
+==20334==    indirectly lost: 20 bytes in 1 blocks
+==20334==      possibly lost: 0 bytes in 0 blocks
+==20334==    still reachable: 0 bytes in 0 blocks
+==20334==         suppressed: 0 bytes in 0 blocks
+==20334== Rerun with --leak-check=full to see details of leaked memory
+==20334== 
+==20334== Use --track-origins=yes to see where uninitialised values come from
+==20334== For lists of detected and suppressed errors, rerun with: -s
+==20334== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+eurus@eurus:~/Documents/College/Sem_3/ENPM808x/cpp-boilerplate/build$ cat ../output/initial_valgrind_run.txt 
+Averaged sensor reading: 10
+eurus@eurus:~/Documents/College/Sem_3/ENPM808x/cpp-boilerplate/build$ valgrind app/shell-app | ../output/initial_valgrind_run.txt
+bash: ../output/initial_valgrind_run.txt: Permission denied
+==20440== Memcheck, a memory error detector
+==20440== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20440== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20440== Command: app/shell-app
+==20440== 
+==20440== 
+==20440== Process terminating with default action of signal 13 (SIGPIPE)
+==20440==    at 0x4C78077: write (write.c:26)
+==20440==    by 0x4BF8E8C: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1181)
+==20440==    by 0x4BFA950: new_do_write (fileops.c:449)
+==20440==    by 0x4BFA950: _IO_new_do_write (fileops.c:426)
+==20440==    by 0x4BFA950: _IO_do_write@@GLIBC_2.2.5 (fileops.c:423)
+==20440==    by 0x4BF8477: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:799)
+==20440==    by 0x4BEC3C5: fflush (iofflush.c:40)
+==20440==    by 0x4A6C042: std::ostream::flush() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.29)
+==20440==    by 0x10A316: main (main.cpp:7)
+==20440== 
+==20440== HEAP SUMMARY:
+==20440==     in use at exit: 2,011 bytes in 49 blocks
+==20440==   total heap usage: 53 allocs, 4 frees, 78,952 bytes allocated
+==20440== 
+==20440== LEAK SUMMARY:
+==20440==    definitely lost: 24 bytes in 1 blocks
+==20440==    indirectly lost: 20 bytes in 1 blocks
+==20440==      possibly lost: 160 bytes in 2 blocks
+==20440==    still reachable: 1,807 bytes in 45 blocks
+==20440==         suppressed: 0 bytes in 0 blocks
+==20440== Rerun with --leak-check=full to see details of leaked memory
+==20440== 
+==20440== For lists of detected and suppressed errors, rerun with: -s
+==20440== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
