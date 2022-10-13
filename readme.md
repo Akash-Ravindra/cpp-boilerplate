@@ -10,9 +10,18 @@ and track width are taken from the robot  specifications. It is assumed that the
 
 ## Authors
 ### Phase 1
-- **Driver** : Akash Ravindra
-- **Navigator** : Manu Madhu Pillai 
+- **Driver** : Akash Ravindra (117422085)
+- **Navigator** : Manu Madhu Pillai (117817928)
 
+## Links
+### Phase 0 (Proposal)
+- [Proposal Video](https://youtu.be/N1TOlgHQ_ZI)
+
+- [Project Proposal](/project_docs/phase0/project_proposal.pdf)
+
+- [UML Class Diagram](/project_docs/phase0/uml_class_diagram.pdf)
+
+- [Quad Chart](/project_docs/phase0/quad_chart.pdf)
 
 ## Standard install via command-line
 ```
