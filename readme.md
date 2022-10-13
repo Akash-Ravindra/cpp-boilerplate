@@ -1,19 +1,24 @@
-# C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+# Ackermann Steering Robot PD Controller
+[![Build Status](https://travis-ci.org/Akash-Ravindra/cpp-boilerplate.svg?branch=MidTerm_Ackermann_Controller)](https://travis-ci.org/Akash-Ravindra/cpp-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/Akash-Ravindra/cpp-boilerplate/badge.svg?branch=MidTerm_Ackermann_Controller)](https://coveralls.io/github/Akash-Ravindra/cpp-boilerplate?branch=MidTerm_Ackermann_Controller)
 ---
 
 ## Overview
 
-Simple starter C++ project with:
+The project aims to implement a controller for the newly developed ground robot developed by Acme Robotics which uses an Ackermann steering mechanism. Ackermann steering mechanism is superior to other steering mechanisms in terms of power usage, reduced tire slippage and better rough terrain performance. These advantages make the robot perform more consistently in various terrains and increases the longevity of the robot. The Controller takes inputs as desired heading and velocity and calculates steering angles and velocities of the front wheels to achieve the desired result. The wheelbase
+and track width are taken from the robot  specifications. It is assumed that the motors used can output the exact angular velocities as provided by the controller.
 
-- cmake
-- googletest
+## Authors
+### Phase 1
+- **Driver** : Akash Ravindra
+- **Navigator** : Manu Madhu Pillai 
+
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/Akash-Ravindra/cpp-boilerplate
 cd <path to repository>
+git checkout MidTerm_Ackermann_Controller
 mkdir build
 cd build
 cmake ..
@@ -39,7 +44,8 @@ In your Eclipse workspace directory (or create a new one), checkout the repo (an
 ```
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/Akash-Ravindra/cpp-boilerplate
+git checkout MidTerm_Ackermann_Controller
 ```
 
 In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
