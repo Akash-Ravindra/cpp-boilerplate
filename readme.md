@@ -1,7 +1,11 @@
 # Ackermann Steering Robot PD Controller
 [![Build Status](https://github.com/Akash-Ravindra/cpp-boilerplate/actions/workflows/build_and_coveralls.yml/badge.svg?branch=MidTerm_Ackermann_Controller)](https://github.com/Akash-Ravindra/cpp-boilerplate/actions/workflows/build_and_coveralls.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Akash-Ravindra/cpp-boilerplate/badge.svg?branch=MidTerm_Ackermann_Controller)](https://coveralls.io/github/Akash-Ravindra/cpp-boilerplate?branch=MidTerm_Ackermann_Controller)
+[![License: MIT](https://img.shields.io/badge/License-MIT-informational.svg)](https://opensource.org/licenses/MIT)
+
+
 ---
+
 
 ## Overview
 
