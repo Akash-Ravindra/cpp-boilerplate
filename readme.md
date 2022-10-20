@@ -1,10 +1,11 @@
 # Ackermann Steering Robot PD Controller
+---
 [![Build Status](https://github.com/Akash-Ravindra/cpp-boilerplate/actions/workflows/build_and_coveralls.yml/badge.svg?branch=MidTerm_Ackermann_Controller)](https://github.com/Akash-Ravindra/cpp-boilerplate/actions/workflows/build_and_coveralls.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Akash-Ravindra/cpp-boilerplate/badge.svg?branch=MidTerm_Ackermann_Controller)](https://coveralls.io/github/Akash-Ravindra/cpp-boilerplate?branch=MidTerm_Ackermann_Controller)
 [![License: MIT](https://img.shields.io/badge/License-MIT-informational.svg)](https://opensource.org/licenses/MIT)
 
 
----
+
 
 
 ## Overview
@@ -27,6 +28,19 @@ and track width are taken from the robot  specifications. It is assumed that the
 
 - [Quad Chart](/project_docs/phase0/quad_chart.pdf)
 
+### Phase 1 (Plan and Design)
+- [Revised UML Class Diagram](/project_docs/phase1/UML%20diagram.pdf)
+
+- [Phase 1 Video](https://youtu.be/GaALsHoe-xM)
+
+- [Sprint Plan and Review Notes](https://docs.google.com/document/d/1TFAyT-DeAPkKnCVJH0jxk8U-N_eZQAr4_4o1VAjs1ac/edit?usp=sharing)
+
+- [AIP Product Backlog, Sprint Backlog and Work Log](https://docs.google.com/spreadsheets/d/1JZOPLSpkybEujwUPqaf-IIHkhTJEMLg6voaGMZ3BbhA/edit?usp=sharing)
+
+
+## Known bugs
+- None
+
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/Akash-Ravindra/cpp-boilerplate
@@ -40,7 +54,7 @@ Run tests: ./test/cpp-test
 Run program: ./app/shell-app
 ```
 
-## Building for code coverage (for assignments beginning in Week 4)
+## Building for code coverage 
 ```
 sudo apt-get install lcov
 cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
@@ -48,6 +62,14 @@ make
 make code_coverage
 ```
 This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
+
+## Building Doxygen Documentation
+```
+sudo apt install doxygen
+cd doxygen 
+doxygen -g default_config
+```
+This generates a index.html page in doxygen/html sub-directory tht can be viewed locally in a web browser.
 
 ## Working with Eclipse IDE ##
 
