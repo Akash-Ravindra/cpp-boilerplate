@@ -1,0 +1,99 @@
+\hypertarget{classpd_1_1PidController}{}\doxysection{pd\+::Pid\+Controller Class Reference}
+\label{classpd_1_1PidController}\index{pd::PidController@{pd::PidController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpd_1_1PidController_a9e6ccda910f30668ca1672c4a25f0480}{Pid\+Controller}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{Pid\+Controller}} $>$ cpy)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpd_1_1PidController_af6300352552582f66a3b1f6806129115}{Pid\+Controller}} (double p, double d, double t)
+\begin{DoxyCompactList}\small\item\em Initialize the. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classpd_1_1PidController_abdb3fbf2d29514f9ac25b768aa6ecead}{compute}} (double target, double curr)
+\begin{DoxyCompactList}\small\item\em Compute the P\+ID. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classpd_1_1PidController_abf716b7fc53c54c1d41920aab0bd30d7}{get\+Error}} (double tar, double curr)
+\begin{DoxyCompactList}\small\item\em Returns the computed error of the current output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpd_1_1PidController_a9e6ccda910f30668ca1672c4a25f0480}\label{classpd_1_1PidController_a9e6ccda910f30668ca1672c4a25f0480}} 
+\index{pd::PidController@{pd::PidController}!PidController@{PidController}}
+\index{PidController@{PidController}!pd::PidController@{pd::PidController}}
+\doxysubsubsection{\texorpdfstring{PidController()}{PidController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily pd\+::\+Pid\+Controller\+::\+Pid\+Controller (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{Pid\+Controller}} $>$}]{cpy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpy} & A controller to be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpd_1_1PidController_af6300352552582f66a3b1f6806129115}\label{classpd_1_1PidController_af6300352552582f66a3b1f6806129115}} 
+\index{pd::PidController@{pd::PidController}!PidController@{PidController}}
+\index{PidController@{PidController}!pd::PidController@{pd::PidController}}
+\doxysubsubsection{\texorpdfstring{PidController()}{PidController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pd\+::\+Pid\+Controller\+::\+Pid\+Controller (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{d,  }\item[{double}]{t }\end{DoxyParamCaption})}
+
+
+
+Initialize the. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Proportional Gain \\
+\hline
+{\em d} & Derivative Gain \\
+\hline
+{\em t} & Time step for controller calculations \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpd_1_1PidController_abdb3fbf2d29514f9ac25b768aa6ecead}\label{classpd_1_1PidController_abdb3fbf2d29514f9ac25b768aa6ecead}} 
+\index{pd::PidController@{pd::PidController}!compute@{compute}}
+\index{compute@{compute}!pd::PidController@{pd::PidController}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily double pd\+::\+Pid\+Controller\+::compute (\begin{DoxyParamCaption}\item[{double}]{target,  }\item[{double}]{curr }\end{DoxyParamCaption})}
+
+
+
+Compute the P\+ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Reference value = Value to reach \\
+\hline
+{\em curr} & Current value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Controller Output 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpd_1_1PidController_abf716b7fc53c54c1d41920aab0bd30d7}\label{classpd_1_1PidController_abf716b7fc53c54c1d41920aab0bd30d7}} 
+\index{pd::PidController@{pd::PidController}!getError@{getError}}
+\index{getError@{getError}!pd::PidController@{pd::PidController}}
+\doxysubsubsection{\texorpdfstring{getError()}{getError()}}
+{\footnotesize\ttfamily double pd\+::\+Pid\+Controller\+::get\+Error (\begin{DoxyParamCaption}\item[{double}]{tar,  }\item[{double}]{curr }\end{DoxyParamCaption})}
+
+
+
+Returns the computed error of the current output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tar} & target \\
+\hline
+{\em curr} & curr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the Error currently calculated 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eurus/\+Documents/\+College/\+Sem\+\_\+3/\+E\+N\+P\+M808x/cpp-\/boilerplate/include/Pid\+Controller.\+hpp\item 
+/home/eurus/\+Documents/\+College/\+Sem\+\_\+3/\+E\+N\+P\+M808x/cpp-\/boilerplate/app/Pid\+Controller.\+cpp\end{DoxyCompactItemize}

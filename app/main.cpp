@@ -1,14 +1,12 @@
-#include <iostream>
-#include <AnalogSensor.hpp>
+/**
+ * @file main.cpp
+ * @author Akash Ravindra (aravind2@umd.edu)
+ * @brief
+ * @version 0.1
+ * @date 2022-10-18
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 
-int main()
-{
-    AnalogSensor lightSensor(5);
-    std::cout << "Averaged sensor reading: " << lightSensor.Read() << std::endl;
-    bool terminator;
-    if( terminator )
-    {
-        std::cout << "DONE" << std::endl;
-    }
-    return 0;
-}
+int main() { return 0; }
