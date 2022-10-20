@@ -3,6 +3,9 @@ set(GTEST_SHUFFLE 1)
 add_executable(
     cpp-test
     main.cpp
+    ../app/Ackermann.cpp
+    ../app/Robot.cpp
+    ../app/PidController.cpp
     test.cpp
 )
 
