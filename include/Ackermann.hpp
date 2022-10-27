@@ -33,6 +33,10 @@ class Ackermann {
   std::array<double, 2> wheelAngles{0.0, 0.0};
   /// @brief The velocities attained by the wheel
   std::array<double, 2> wheelVelocity{0.00, 0.00};
+  /// @brief Velocity controller to update the velocity of the Robot
+  const pd::PidController velocityController;
+  /// @brief Current velocity of the robot.
+  double velocity{0.0};
 
  public:
   /// @brief Default Initializer
@@ -44,10 +48,12 @@ class Ackermann {
    * left wheel
    * @param rwheel Controller that will be used to calculate the heading of the
    * right wheel
+   * @param velocityContr Controller that will be used to calculate vehicle velocity
    */
   Ackermann(double track_w, double w_base,
             std::shared_ptr<pd::PidController> lwheel,
-            std::shared_ptr<pd::PidController> rwheel);
+            std::shared_ptr<pd::PidController> rwheel,
+            std::shared_ptr<pd::PidController> velocityContr);
   /**
    * @brief Destroy the Ackermann object
    *
@@ -58,7 +64,7 @@ class Ackermann {
   /// @param robotVelocity The velocity of the COM of the robot
   /// @return std::array<double, 2> Containing the velocities of the left and
   /// right wheel
-  std::array<double, 2> computeVelocity(double robotVelocity);
+  std::array<double, 2> computeVelocity(double Velocity);
 
   /// @brief Computes the angles of the wheel to achieve the required turn angle
   /// @param currHead The current heading of the robot
