@@ -6,22 +6,22 @@
 \mbox{\Hypertarget{classsteering_1_1Ackermann_aa0ab170e9bb385a03be24fe14bcfdd77}\label{classsteering_1_1Ackermann_aa0ab170e9bb385a03be24fe14bcfdd77}} 
 \mbox{\hyperlink{classsteering_1_1Ackermann_aa0ab170e9bb385a03be24fe14bcfdd77}{Ackermann}} ()
 \begin{DoxyCompactList}\small\item\em Default Initializer. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classsteering_1_1Ackermann_aea31e5a2208ce54bc4242c916f0a932a}{Ackermann}} (double track\+\_\+w, double w\+\_\+base, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$ lwheel, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$ rwheel)
+\mbox{\hyperlink{classsteering_1_1Ackermann_a090b0d0bc082939d9a893d4131ac6a63}{Ackermann}} (double track\+\_\+w, double w\+\_\+base, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$ lwheel, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$ rwheel, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$ velocity\+Contr)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classsteering_1_1Ackermann}{Ackermann}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classsteering_1_1Ackermann_a03d55422e09741df61d307338a2c4a54}{$\sim$\+Ackermann}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classsteering_1_1Ackermann}{Ackermann}} object. \end{DoxyCompactList}\item 
-std\+::array$<$ double, 2 $>$ \mbox{\hyperlink{classsteering_1_1Ackermann_ac4959e6918f7b8e880f393affe27d4f9}{compute\+Velocity}} (double robot\+Velocity)
+std\+::array$<$ double, 2 $>$ \mbox{\hyperlink{classsteering_1_1Ackermann_aa3a0b7315aba575825ce87ca146cd1e0}{compute\+Velocity}} (double Velocity)
 \begin{DoxyCompactList}\small\item\em Used to calculate the velocities of each driven while having calculated their angles. \end{DoxyCompactList}\item 
 std\+::array$<$ double, 2 $>$ \mbox{\hyperlink{classsteering_1_1Ackermann_a55c4bae91daf6a28f52192883f652b63}{compute\+Steer\+Angle}} (double curr\+Head, double target\+Head)
 \begin{DoxyCompactList}\small\item\em Computes the angles of the wheel to achieve the required turn angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classsteering_1_1Ackermann_aea31e5a2208ce54bc4242c916f0a932a}\label{classsteering_1_1Ackermann_aea31e5a2208ce54bc4242c916f0a932a}} 
+\mbox{\Hypertarget{classsteering_1_1Ackermann_a090b0d0bc082939d9a893d4131ac6a63}\label{classsteering_1_1Ackermann_a090b0d0bc082939d9a893d4131ac6a63}} 
 \index{steering::Ackermann@{steering::Ackermann}!Ackermann@{Ackermann}}
 \index{Ackermann@{Ackermann}!steering::Ackermann@{steering::Ackermann}}
 \doxysubsubsection{\texorpdfstring{Ackermann()}{Ackermann()}}
-{\footnotesize\ttfamily steering\+::\+Ackermann\+::\+Ackermann (\begin{DoxyParamCaption}\item[{double}]{track\+\_\+w,  }\item[{double}]{w\+\_\+base,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$}]{lwheel,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$}]{rwheel }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily steering\+::\+Ackermann\+::\+Ackermann (\begin{DoxyParamCaption}\item[{double}]{track\+\_\+w,  }\item[{double}]{w\+\_\+base,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$}]{lwheel,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$}]{rwheel,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpd_1_1PidController}{pd\+::\+Pid\+Controller}} $>$}]{velocity\+Contr }\end{DoxyParamCaption})}
 
 
 
@@ -32,6 +32,8 @@ Construct a new \mbox{\hyperlink{classsteering_1_1Ackermann}{Ackermann}} object.
 {\em lwheel} & Controller that will be used to calculate the heading of the left wheel \\
 \hline
 {\em rwheel} & Controller that will be used to calculate the heading of the right wheel \\
+\hline
+{\em velocity\+Contr} & Controller that will be used to calculate vehicle velocity \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classsteering_1_1Ackermann_a03d55422e09741df61d307338a2c4a54}\label{classsteering_1_1Ackermann_a03d55422e09741df61d307338a2c4a54}} 
@@ -67,11 +69,11 @@ Computes the angles of the wheel to achieve the required turn angle.
 \begin{DoxyReturn}{Returns}
 std\+::array$<$double, 2$>$ The computed headings of each wheel 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classsteering_1_1Ackermann_ac4959e6918f7b8e880f393affe27d4f9}\label{classsteering_1_1Ackermann_ac4959e6918f7b8e880f393affe27d4f9}} 
+\mbox{\Hypertarget{classsteering_1_1Ackermann_aa3a0b7315aba575825ce87ca146cd1e0}\label{classsteering_1_1Ackermann_aa3a0b7315aba575825ce87ca146cd1e0}} 
 \index{steering::Ackermann@{steering::Ackermann}!computeVelocity@{computeVelocity}}
 \index{computeVelocity@{computeVelocity}!steering::Ackermann@{steering::Ackermann}}
 \doxysubsubsection{\texorpdfstring{computeVelocity()}{computeVelocity()}}
-{\footnotesize\ttfamily std\+::array$<$ double, 2 $>$ steering\+::\+Ackermann\+::compute\+Velocity (\begin{DoxyParamCaption}\item[{double}]{robot\+Velocity }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::array$<$ double, 2 $>$ steering\+::\+Ackermann\+::compute\+Velocity (\begin{DoxyParamCaption}\item[{double}]{Velocity }\end{DoxyParamCaption})}
 
 
 
@@ -89,5 +91,5 @@ std\+::array$<$double, 2$>$ Containing the velocities of the left and right whee
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/eurus/\+Documents/\+College/\+Sem\+\_\+3/\+E\+N\+P\+M808x/cpp-\/boilerplate/include/Ackermann.\+hpp\item 
-/home/eurus/\+Documents/\+College/\+Sem\+\_\+3/\+E\+N\+P\+M808x/cpp-\/boilerplate/app/Ackermann.\+cpp\end{DoxyCompactItemize}
+/home/manu/fall2022/enpm808x/midterm/cpp-\/boilerplate/include/Ackermann.\+hpp\item 
+/home/manu/fall2022/enpm808x/midterm/cpp-\/boilerplate/app/Ackermann.\+cpp\end{DoxyCompactItemize}

@@ -81,12 +81,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af6300352552582f66a3b1f6806129115"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpd_1_1PidController.html#af6300352552582f66a3b1f6806129115">PidController</a> (double p, double d, double t)</td></tr>
 <tr class="memdesc:af6300352552582f66a3b1f6806129115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the.  <a href="classpd_1_1PidController.html#af6300352552582f66a3b1f6806129115">More...</a><br /></td></tr>
 <tr class="separator:af6300352552582f66a3b1f6806129115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdb3fbf2d29514f9ac25b768aa6ecead"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpd_1_1PidController.html#abdb3fbf2d29514f9ac25b768aa6ecead">compute</a> (double target, double curr)</td></tr>
-<tr class="memdesc:abdb3fbf2d29514f9ac25b768aa6ecead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the PID.  <a href="classpd_1_1PidController.html#abdb3fbf2d29514f9ac25b768aa6ecead">More...</a><br /></td></tr>
-<tr class="separator:abdb3fbf2d29514f9ac25b768aa6ecead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf716b7fc53c54c1d41920aab0bd30d7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpd_1_1PidController.html#abf716b7fc53c54c1d41920aab0bd30d7">getError</a> (double tar, double curr)</td></tr>
-<tr class="memdesc:abf716b7fc53c54c1d41920aab0bd30d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the computed error of the current output.  <a href="classpd_1_1PidController.html#abf716b7fc53c54c1d41920aab0bd30d7">More...</a><br /></td></tr>
-<tr class="separator:abf716b7fc53c54c1d41920aab0bd30d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d64592cbf4936492492e81054b44d50"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpd_1_1PidController.html#a5d64592cbf4936492492e81054b44d50">compute</a> (double target, double curr) const</td></tr>
+<tr class="memdesc:a5d64592cbf4936492492e81054b44d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the PID.  <a href="classpd_1_1PidController.html#a5d64592cbf4936492492e81054b44d50">More...</a><br /></td></tr>
+<tr class="separator:a5d64592cbf4936492492e81054b44d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dec050fa5702998dad92e9088e17170"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpd_1_1PidController.html#a3dec050fa5702998dad92e9088e17170">getError</a> (double tar, double curr) const</td></tr>
+<tr class="memdesc:a3dec050fa5702998dad92e9088e17170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the computed error of the current output.  <a href="classpd_1_1PidController.html#a3dec050fa5702998dad92e9088e17170">More...</a><br /></td></tr>
+<tr class="separator:a3dec050fa5702998dad92e9088e17170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9e6ccda910f30668ca1672c4a25f0480"></a>
@@ -168,8 +168,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abdb3fbf2d29514f9ac25b768aa6ecead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdb3fbf2d29514f9ac25b768aa6ecead">&#9670;&nbsp;</a></span>compute()</h2>
+<a id="a5d64592cbf4936492492e81054b44d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d64592cbf4936492492e81054b44d50">&#9670;&nbsp;</a></span>compute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -206,8 +206,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abf716b7fc53c54c1d41920aab0bd30d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf716b7fc53c54c1d41920aab0bd30d7">&#9670;&nbsp;</a></span>getError()</h2>
+<a id="a3dec050fa5702998dad92e9088e17170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dec050fa5702998dad92e9088e17170">&#9670;&nbsp;</a></span>getError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +227,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,8 +245,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/eurus/Documents/College/Sem_3/ENPM808x/cpp-boilerplate/include/<a class="el" href="PidController_8hpp_source.html">PidController.hpp</a></li>
-<li>/home/eurus/Documents/College/Sem_3/ENPM808x/cpp-boilerplate/app/PidController.cpp</li>
+<li>/home/manu/fall2022/enpm808x/midterm/cpp-boilerplate/include/<a class="el" href="PidController_8hpp_source.html">PidController.hpp</a></li>
+<li>/home/manu/fall2022/enpm808x/midterm/cpp-boilerplate/app/PidController.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

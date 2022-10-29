@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann Steering: /home/eurus/Documents/College/Sem_3/ENPM808x/cpp-boilerplate/include/PidController.hpp Source File</title>
+<title>Ackermann Steering: /home/manu/fall2022/enpm808x/midterm/cpp-boilerplate/include/PidController.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,16 +88,16 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classpd_1_1PidController.html#a9e6ccda910f30668ca1672c4a25f0480">PidController</a>(std::shared_ptr&lt;PidController&gt; cpy);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classpd_1_1PidController.html#a9e6ccda910f30668ca1672c4a25f0480">PidController</a>(<span class="keywordtype">double</span> p, <span class="keywordtype">double</span> d, <span class="keywordtype">double</span> t);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  ~<a class="code" href="classpd_1_1PidController.html">PidController</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classpd_1_1PidController.html#abdb3fbf2d29514f9ac25b768aa6ecead">compute</a>(<span class="keywordtype">double</span> target, <span class="keywordtype">double</span> curr);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classpd_1_1PidController.html#abf716b7fc53c54c1d41920aab0bd30d7">getError</a>(<span class="keywordtype">double</span> tar, <span class="keywordtype">double</span> curr);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classpd_1_1PidController.html#a5d64592cbf4936492492e81054b44d50">compute</a>(<span class="keywordtype">double</span> target, <span class="keywordtype">double</span> curr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classpd_1_1PidController.html#a3dec050fa5702998dad92e9088e17170">getError</a>(<span class="keywordtype">double</span> tar, <span class="keywordtype">double</span> curr) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace pd</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  // INCLUDE_PIDCONTROLLER_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclasspd_1_1PidController_html_a3dec050fa5702998dad92e9088e17170"><div class="ttname"><a href="classpd_1_1PidController.html#a3dec050fa5702998dad92e9088e17170">pd::PidController::getError</a></div><div class="ttdeci">double getError(double tar, double curr) const</div><div class="ttdoc">Returns the computed error of the current output.</div><div class="ttdef"><b>Definition:</b> PidController.cpp:29</div></div>
+<div class="ttc" id="aclasspd_1_1PidController_html_a5d64592cbf4936492492e81054b44d50"><div class="ttname"><a href="classpd_1_1PidController.html#a5d64592cbf4936492492e81054b44d50">pd::PidController::compute</a></div><div class="ttdeci">double compute(double target, double curr) const</div><div class="ttdoc">Compute the PID.</div><div class="ttdef"><b>Definition:</b> PidController.cpp:24</div></div>
 <div class="ttc" id="aclasspd_1_1PidController_html"><div class="ttname"><a href="classpd_1_1PidController.html">pd::PidController</a></div><div class="ttdef"><b>Definition:</b> PidController.hpp:17</div></div>
-<div class="ttc" id="aclasspd_1_1PidController_html_abf716b7fc53c54c1d41920aab0bd30d7"><div class="ttname"><a href="classpd_1_1PidController.html#abf716b7fc53c54c1d41920aab0bd30d7">pd::PidController::getError</a></div><div class="ttdeci">double getError(double tar, double curr)</div><div class="ttdoc">Returns the computed error of the current output.</div><div class="ttdef"><b>Definition:</b> PidController.cpp:24</div></div>
-<div class="ttc" id="aclasspd_1_1PidController_html_abdb3fbf2d29514f9ac25b768aa6ecead"><div class="ttname"><a href="classpd_1_1PidController.html#abdb3fbf2d29514f9ac25b768aa6ecead">pd::PidController::compute</a></div><div class="ttdeci">double compute(double target, double curr)</div><div class="ttdoc">Compute the PID.</div><div class="ttdef"><b>Definition:</b> PidController.cpp:22</div></div>
-<div class="ttc" id="aclasspd_1_1PidController_html_a9e6ccda910f30668ca1672c4a25f0480"><div class="ttname"><a href="classpd_1_1PidController.html#a9e6ccda910f30668ca1672c4a25f0480">pd::PidController::PidController</a></div><div class="ttdeci">PidController(std::shared_ptr&lt; PidController &gt; cpy)</div><div class="ttdoc">Copy Constructor.</div><div class="ttdef"><b>Definition:</b> PidController.cpp:18</div></div>
+<div class="ttc" id="aclasspd_1_1PidController_html_a9e6ccda910f30668ca1672c4a25f0480"><div class="ttname"><a href="classpd_1_1PidController.html#a9e6ccda910f30668ca1672c4a25f0480">pd::PidController::PidController</a></div><div class="ttdeci">PidController(std::shared_ptr&lt; PidController &gt; cpy)</div><div class="ttdoc">Copy Constructor.</div><div class="ttdef"><b>Definition:</b> PidController.cpp:19</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
