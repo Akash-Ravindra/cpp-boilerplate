@@ -43,12 +43,12 @@ class PidController {
   /// @param target Reference value = Value to reach
   /// @param curr Current value
   /// @return Controller Output
-  double compute(double target, double curr);
+  double compute(double target, double curr) const;
   /// @brief Returns the computed error of the current output
   /// @param tar target
   /// @param curr curr
   /// @return Return the Error currently calculated
-  double getError(double tar, double curr);
+  double getError(double tar, double curr) const;
 };
 }  // namespace pd
 #endif  // INCLUDE_PIDCONTROLLER_HPP_
