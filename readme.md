@@ -37,9 +37,20 @@ and track width are taken from the robot  specifications. It is assumed that the
 
 - [AIP Product Backlog, Sprint Backlog and Work Log](https://docs.google.com/spreadsheets/d/1JZOPLSpkybEujwUPqaf-IIHkhTJEMLg6voaGMZ3BbhA/edit?usp=sharing)
 
+### Phase 2 (Final Sprint and Results)
 
+- [Phase 2 Video]()
+
+- [Revised UML Class Diagram](/project_docs/phase2/UML%20diagram-3.pdf)
+
+- [Sprint Plan And Review Notes](https://docs.google.com/document/d/1Og5gVL-0DVM8on2Ri6LxnkysdqZ3917tSwXA_Kx67b8/edit#)
+
+- [AIP Product Backlog, Sprint Backlog and Work Log](https://docs.google.com/spreadsheets/d/1JZOPLSpkybEujwUPqaf-IIHkhTJEMLg6voaGMZ3BbhA/edit#gid=911808487)
 ## Known bugs
-- None
+- Need to tune wheel angle PID controller further
+- More tests need to be developed for 100% coverage
+- UI need for easier usage
+
 
 ## Standard install via command-line
 ```
