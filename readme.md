@@ -39,7 +39,7 @@ and track width are taken from the robot  specifications. It is assumed that the
 
 ### Phase 2 (Final Sprint and Results)
 
-- [Phase 2 Video]()
+- [Phase 2 Video](https://youtu.be/_oaJNS9JZb4)
 
 - [Revised UML Class Diagram](/project_docs/phase2/UML%20diagram-3.pdf)
 
