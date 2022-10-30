@@ -18,6 +18,10 @@ and track width are taken from the robot  specifications. It is assumed that the
 - **Driver** : Akash Ravindra (117422085)
 - **Navigator** : Manu Madhu Pillai (117817928)
 
+### Phase 2
+- **Driver** : Manu Madhu Pillai (117817928)
+- **Navigator** : Akash Ravindra (117422085)
+
 ## Links
 ### Phase 0 (Proposal)
 - [Proposal Video](https://youtu.be/N1TOlgHQ_ZI)
