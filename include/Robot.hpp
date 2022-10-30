@@ -31,7 +31,7 @@ class Robot {
   const double maxVelocity{0.0};
   /// @brief The physical dimensions that correspond to the wheel base measure
   /// in meters
-  const double wheelBase{0.01};
+  const double wheelBase{0.0};
   /// @brief The physical dimension that corresponds to the distance between the
   /// wheels measured in meters
   const double trackWidth{0.0};
@@ -42,8 +42,6 @@ class Robot {
   /// @brief Steering module(Ackermann steering) using to calculate the wheel
   /// angle and velocity
   std::shared_ptr<steering::Ackermann> steering;
-  /// @brief Velocity controller to update the velocity of the Robot
-  std::shared_ptr<pd::PidController> velocityController;
 
  public:
   /**

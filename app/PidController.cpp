@@ -15,12 +15,17 @@
 
 pd::PidController::PidController(double p, double d, double t)
     : kp{p}, kd{d}, dt{t} {}
+
 pd::PidController::PidController(std::shared_ptr<PidController> cpy)
     : kp{cpy.get()->kp}, kd{cpy.get()->kd}, dt{cpy.get()->dt} {}
+
 pd::PidController::~PidController() {}
 
-double pd::PidController::compute(double tar, double curr) { return 0.0; }
+double pd::PidController::compute(double tar, double curr) const {
+  // error = curr - tar;
+  return ((kp * (tar - curr)) + (kd * (tar - curr) / dt)) * dt;
+}
 
-double pd::PidController::getError(double tar, double curr) {
-  return curr - tar;
+double pd::PidController::getError(double tar, double curr) const {
+  return tar - curr;
 }

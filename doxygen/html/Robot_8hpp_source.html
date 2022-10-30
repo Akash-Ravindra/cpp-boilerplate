@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ackermann Steering: /home/eurus/Documents/College/Sem_3/ENPM808x/cpp-boilerplate/include/Robot.hpp Source File</title>
+<title>Ackermann Steering: /home/manu/fall2022/enpm808x/midterm/cpp-boilerplate/include/Robot.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,26 +88,25 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> maxWheelAngle{0.0};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> maxVelocity{0.0};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> wheelBase{0.01};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> wheelBase{0.0};</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> trackWidth{0.0};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">double</span> headingCurrent{0.0};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">double</span> velocityCurrent{0.0};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::shared_ptr&lt;steering::Ackermann&gt; steering;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  std::shared_ptr&lt;pd::PidController&gt; velocityController;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classbot_1_1Robot.html#a67004b354289c2ed661916b075de2196">Robot</a>(<span class="keywordtype">double</span> maxAngle, <span class="keywordtype">double</span> maxVel, <span class="keywordtype">double</span> wBase, <span class="keywordtype">double</span> tWidth);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classbot_1_1Robot.html#abc2b614ce799967aab04509089b5e2a7">~Robot</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::vector&lt;std::array&lt;double, 2&gt;&gt; <a class="code" href="classbot_1_1Robot.html#ac34fc0449bb8b72fb33a433fcb23e099">moveRobot</a>(<span class="keywordtype">double</span> targetVel,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                               <span class="keywordtype">double</span> targetHead);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace bot</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif  // INCLUDE_ROBOT_HPP_</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classbot_1_1Robot.html#a67004b354289c2ed661916b075de2196">Robot</a>(<span class="keywordtype">double</span> maxAngle, <span class="keywordtype">double</span> maxVel, <span class="keywordtype">double</span> wBase, <span class="keywordtype">double</span> tWidth);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classbot_1_1Robot.html#abc2b614ce799967aab04509089b5e2a7">~Robot</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::vector&lt;std::array&lt;double, 2&gt;&gt; <a class="code" href="classbot_1_1Robot.html#ac34fc0449bb8b72fb33a433fcb23e099">moveRobot</a>(<span class="keywordtype">double</span> targetVel,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                               <span class="keywordtype">double</span> targetHead);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace bot</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif  // INCLUDE_ROBOT_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassbot_1_1Robot_html_ac34fc0449bb8b72fb33a433fcb23e099"><div class="ttname"><a href="classbot_1_1Robot.html#ac34fc0449bb8b72fb33a433fcb23e099">bot::Robot::moveRobot</a></div><div class="ttdeci">std::vector&lt; std::array&lt; double, 2 &gt; &gt; moveRobot(double targetVel, double targetHead)</div><div class="ttdoc">Construct a new std::vector&lt;double&gt;move Robot object.</div><div class="ttdef"><b>Definition:</b> Robot.cpp:35</div></div>
+<div class="ttc" id="aclassbot_1_1Robot_html_ac34fc0449bb8b72fb33a433fcb23e099"><div class="ttname"><a href="classbot_1_1Robot.html#ac34fc0449bb8b72fb33a433fcb23e099">bot::Robot::moveRobot</a></div><div class="ttdeci">std::vector&lt; std::array&lt; double, 2 &gt; &gt; moveRobot(double targetVel, double targetHead)</div><div class="ttdoc">Construct a new std::vector&lt;double&gt;move Robot object.</div><div class="ttdef"><b>Definition:</b> Robot.cpp:38</div></div>
 <div class="ttc" id="aclassbot_1_1Robot_html"><div class="ttname"><a href="classbot_1_1Robot.html">bot::Robot</a></div><div class="ttdef"><b>Definition:</b> Robot.hpp:26</div></div>
-<div class="ttc" id="aclassbot_1_1Robot_html_a67004b354289c2ed661916b075de2196"><div class="ttname"><a href="classbot_1_1Robot.html#a67004b354289c2ed661916b075de2196">bot::Robot::Robot</a></div><div class="ttdeci">Robot(double maxAngle, double maxVel, double wBase, double tWidth)</div><div class="ttdoc">Construct a new Robot object.</div><div class="ttdef"><b>Definition:</b> Robot.cpp:20</div></div>
-<div class="ttc" id="aclassbot_1_1Robot_html_abc2b614ce799967aab04509089b5e2a7"><div class="ttname"><a href="classbot_1_1Robot.html#abc2b614ce799967aab04509089b5e2a7">bot::Robot::~Robot</a></div><div class="ttdeci">~Robot()</div><div class="ttdoc">Destroy the Robot object.</div><div class="ttdef"><b>Definition:</b> Robot.cpp:33</div></div>
+<div class="ttc" id="aclassbot_1_1Robot_html_a67004b354289c2ed661916b075de2196"><div class="ttname"><a href="classbot_1_1Robot.html#a67004b354289c2ed661916b075de2196">bot::Robot::Robot</a></div><div class="ttdeci">Robot(double maxAngle, double maxVel, double wBase, double tWidth)</div><div class="ttdoc">Construct a new Robot object.</div><div class="ttdef"><b>Definition:</b> Robot.cpp:21</div></div>
+<div class="ttc" id="aclassbot_1_1Robot_html_abc2b614ce799967aab04509089b5e2a7"><div class="ttname"><a href="classbot_1_1Robot.html#abc2b614ce799967aab04509089b5e2a7">bot::Robot::~Robot</a></div><div class="ttdeci">~Robot()</div><div class="ttdoc">Destroy the Robot object.</div><div class="ttdef"><b>Definition:</b> Robot.cpp:36</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
